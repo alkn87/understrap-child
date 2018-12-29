@@ -5,6 +5,11 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+@import url('../style.css');
+
 @media print {
   *,
   *::before,
@@ -54,8 +59,9 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", Roboto, sans-serif;
   line-height: 1.15;
+  font-size: 14px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -69,7 +75,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -151,12 +157,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #58595B;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
+    color: #000000;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -322,26 +328,27 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.1;
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 1.8rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.4rem; }
 
 h4, .h4 {
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.1rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -2814,19 +2821,19 @@ tbody.collapse.show {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #58595B;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #16181b;
+    color: #000000;
     text-decoration: none;
     background-color: #f8f9fa; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #007bff; }
+    background-color: #D81820; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #868e96;
     background-color: transparent; }
@@ -4244,11 +4251,11 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #D81820;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:focus, .page-link:hover {
-    color: #0056b3;
+    color: #000000;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -4265,8 +4272,8 @@ tbody.collapse.show {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff; }
+  background-color: #D81820;
+  border-color: #D81820; }
 
 .page-item.disabled .page-link {
   color: #868e96;
@@ -5224,7 +5231,7 @@ button.close {
 .align-text-top {
   vertical-align: text-top !important; }
 
-.bg-primary {
+/* .bg-primary {
   background-color: #007bff !important; }
 
 a.bg-primary:focus, a.bg-primary:hover {
@@ -5234,7 +5241,22 @@ a.bg-primary:focus, a.bg-primary:hover {
   background-color: #868e96 !important; }
 
 a.bg-secondary:focus, a.bg-secondary:hover {
-  background-color: #6c757d !important; }
+  background-color: #6c757d !important; } */
+
+  .bg-primary {
+    background-color: #D81820 !important; }
+
+  a.bg-primary:focus, a.bg-primary:hover {
+    background-color: #C80810 !important; }
+
+  .bg-secondary {
+    background-color: #58595B !important; }
+
+  a.bg-secondary:focus, a.bg-secondary:hover {
+    background-color: #1c656d !important; }
+
+
+
 
 .bg-success {
   background-color: #28a745 !important; }

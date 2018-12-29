@@ -12,3 +12,29 @@
  Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
  GitHub Theme URI: holger1411/understrap-child
 */
+
+.entry-meta {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0.5rem 0;
+}
+
+.entry-meta a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.entry-footer {
+  margin: 0.5rem 0;
+}
+
+.wp-post-image {
+  margin: 1rem 0;
+}
+
+p a {
+  font-weight: bold;
+  text-decoration: dotted;
+}
